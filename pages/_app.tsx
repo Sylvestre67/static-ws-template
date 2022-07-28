@@ -14,6 +14,7 @@ initTranslation(i18n);
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const locale = router.locale || router.defaultLocale;
+
   const firstRender = useRef(true);
 
   if (pageProps.translation && firstRender.current && locale) {

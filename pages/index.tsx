@@ -1,11 +1,15 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
+import { Trans } from "@lingui/react";
+import { useState } from "react";
 
 import { loadTranslation } from "../utils";
 
 import classes from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
+  const [name, setName] = useState("joe");
+
   return (
     <>
       <Head>
@@ -18,7 +22,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={classes.main}>
-        <h1>Hello World !</h1>
+        <p>
+          <Trans id="Hello {name}" values={{ name }} />
+        </p>
       </main>
     </>
   );

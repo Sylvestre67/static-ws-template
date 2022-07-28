@@ -1,11 +1,11 @@
 {
   "locales": [
-    "en-US",
+    "en",
     "fr"
   ],
-  "sourceLocale": "en-US",
+  "sourceLocale": "en",
   "fallbackLocales": {
-    "default": "en-US"
+    "default": "en"
   },
   "catalogs": [
     {

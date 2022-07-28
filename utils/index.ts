@@ -5,7 +5,7 @@ import { en, fr } from "make-plural/plurals";
 // them to approprite plural rules
 export function initTranslation(i18n: I18n): void {
   i18n.loadLocaleData({
-    "en-US": { plurals: en },
+    en: { plurals: en },
     fr: { plurals: fr },
     pseudo: { plurals: en },
   });
