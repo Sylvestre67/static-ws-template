@@ -1,0 +1,20 @@
+{
+  "locales": [
+    "en-US",
+    "fr"
+  ],
+  "sourceLocale": "en-US",
+  "fallbackLocales": {
+    "default": "en-US"
+  },
+  "catalogs": [
+    {
+      "path": "translations/{locale}/messages",
+      "include": [
+        "pages",
+        "components"
+      ]
+    }
+  ],
+  "format": "po"
+}
